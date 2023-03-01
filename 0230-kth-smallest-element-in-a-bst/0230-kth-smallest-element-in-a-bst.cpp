@@ -11,24 +11,19 @@
  */
 class Solution {
 public:
-    priority_queue<int, vector<int>, greater<int>> min_heap;
+    vector<int> nodes;
 
     int kthSmallest(TreeNode* root, int k) {
-        preOrder(root);
-
-        for (int i = 0; i < k-1; i++) {
-            min_heap.pop();
-        }
-        return min_heap.top();
+        inOrder(root);
+        return nodes[k-1];
     }
 
-    void preOrder(TreeNode* node) {
+    void inOrder(TreeNode* node) {
         if (!node) {
             return;
         }
-
-        min_heap.push(node->val);
-        preOrder(node->left);
-        preOrder(node->right);
+        inOrder(node->left);
+        nodes.push_back(node->val);
+        inOrder(node->right);
     }
 };
