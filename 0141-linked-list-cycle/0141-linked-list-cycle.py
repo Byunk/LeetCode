@@ -10,10 +10,10 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        node = head
-        while node != None:
-            if (node.val > 100000):
+        slow, fast = head, head
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+            if slow is fast:
                 return True
-            node.val += 200000
-            node = node.next
         return False
