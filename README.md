@@ -1,2 +1,7 @@
 # LeetCode
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+
+Here is the list of questions I believe to be important or unique.
+
+## Array String
+
+- [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) (Normal)
