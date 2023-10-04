@@ -9,3 +9,7 @@ Here is the list of questions I believe to be important or unique.
 ## Two pointers
 
 - [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
+
+## Sliding Window
+
+- [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) (Medium)
